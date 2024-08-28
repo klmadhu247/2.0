@@ -5,6 +5,7 @@ import Name from './Name';
 import Banner from './Banner';
 import Film from './Film';
 import Voting from './voting';
+import StudentForm from './StudentForm'
 
 class App extends Component
 {
@@ -28,11 +29,13 @@ class App extends Component
      
     <div>
       **********************************************
-    **********************************************
-    **********************************************
+    ************************************************
+    ************************************************
     <Voting crs='C' />
     <Voting crs='C++' />
     <Voting crs='PYT' />
+
+    <StudentForm/>
     <Virat/>
     <Count/>
     <Name nam={this.state.Nm} n1='KLM' age={22} />
