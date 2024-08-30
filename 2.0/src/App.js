@@ -1,10 +1,12 @@
 import React from "react";
 import Menu from "./Menu";
+import FetchJson from "./Fetchjson";
 
 function App(){
   return(
     <div>
-      <Menu/>
+      {/* <Menu/> */}
+      <FetchJson/>
     </div>
   )
 }
