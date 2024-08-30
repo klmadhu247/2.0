@@ -1,24 +1,11 @@
-import React, {Component} from 'react';
-import RegistrationForm from './RegistrationForm';
-import Json from './Json';   
-import Toggle from './Toggle';
-import IncrementBy5 from './Increment';
-import Accordion from './Accordion';
+import React from "react";
+import Menu from "./Menu";
 
-
-class App extends Component
-{
-  
-  render()
-  {
-    return(
-     
+function App(){
+  return(
     <div>
-     <IncrementBy5/>
-     <Accordion/>
+      <Menu/>
     </div>
-    )
-  }
+  )
 }
-
-export default App
+export default App;
