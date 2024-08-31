@@ -1,12 +1,16 @@
 import React from "react";
-import Menu from "./Menu";
-import FetchJson from "./Fetchjson";
+import Tour from './tour'
+import AsynchAwait from "./Fetching_Using_AsynchAwait";
+import AsyncAwaitFetch from "./AsyncAwait";
 
 function App(){
   return(
     <div>
       {/* <Menu/> */}
-      <FetchJson/>
+      {/* <FetchJson/> */}
+      {/* <Tour/> */}
+      <AsynchAwait/>
+      <AsyncAwaitFetch/>
     </div>
   )
 }
