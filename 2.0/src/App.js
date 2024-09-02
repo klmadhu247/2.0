@@ -1,16 +1,17 @@
 import React from "react";
-import Tour from './tour'
-import AsynchAwait from "./Fetching_Using_AsynchAwait";
-import AsyncAwaitFetch from "./AsyncAwait";
+import 'bootstrap/dist/css/bootstrap.min.css';
 
+import Crud from "./Crud";
 function App(){
   return(
     <div>
       {/* <Menu/> */}
       {/* <FetchJson/> */}
       {/* <Tour/> */}
-      <AsynchAwait/>
-      <AsyncAwaitFetch/>
+      {/* <AsynchAwait/>
+      <AsyncAwaitFetch/> */}
+      <Crud/>
+
     </div>
   )
 }

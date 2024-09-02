@@ -1,0 +1,63 @@
+{
+  "todoList": [
+    {
+      "id": "1",
+      "task": "To WRITE A BOOK"
+    },
+    {
+      "id": "2",
+      "task": "Write a blog post",
+      "completed": true
+    },
+    {
+      "id": "3",
+      "task": "Complete the React project",
+      "completed": false
+    },
+    {
+      "id": "4",
+      "task": "Go for a run",
+      "completed": false
+    },
+    {
+      "id": "5",
+      "task": "Clean the kitchen",
+      "completed": true
+    },
+    {
+      "id": "6",
+      "task": "Study for the exam",
+      "completed": false
+    },
+    {
+      "id": "7",
+      "task": "Buy groceries",
+      "completed": true
+    },
+    {
+      "id": "8",
+      "task": "Plan a weekend trip",
+      "completed": false
+    },
+    {
+      "id": "9",
+      "task": "Pay utility bills",
+      "completed": false
+    },
+    {
+      "id": "10",
+      "task": "Organize the closet",
+      "completed": true
+    },
+    {
+      "id": "11",
+      "task": "TO Eat",
+      "completed": "true"
+    },
+    {
+      "id": "12",
+      "task": "TO GET A JOB ",
+      "completed": "ON THE PROCESS"
+    }
+  ]
+}
