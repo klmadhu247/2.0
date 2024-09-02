@@ -60,14 +60,23 @@ const handleDelete=async(wrkId)=>
 
 }
 
-const handleUpdate= async(Index_From_Work) =>
-{
-    const updatedTask = prompt('Update your Task',work[Index_From_Work].task);
+// const handleUpdate= async(Index_From_Work) =>
+// {
+//     const updatedTask = prompt('Update your Task',work[Index_From_Work].task);
 
-    await axios.put(`http://localhost:3000/todoList/${work[Index_From_Work].id}`,{id:work[Index_From_Work].id,task:updatedTask})
+//     await axios.put(`http://localhost:3000/todoList/${work[Index_From_Work].id}`,{id:work[Index_From_Work].id,task:updatedTask})
 
-    fetchData();
-}
+//     fetchData();
+// }
+
+const handleUpdate= async(idwrk) =>
+    {
+        const updatedTask = prompt('Update your Task');
+    
+        await axios.put(`http://localhost:3000/todoList/${idwrk}`,{id:idwrk,task:updatedTask})
+    
+        fetchData();
+    }
 
 
     return(
@@ -79,7 +88,7 @@ const handleUpdate= async(Index_From_Work) =>
 <button onClick={handleAdd}>Add Task</button>
             {work.map((wrk,index)=><div><p>{wrk.id} . {wrk.task}</p>
                 <button onClick={()=>handleDelete(wrk.id)} className="btn btn-danger">X</button>
-                <button onClick={()=>handleUpdate(index)}>Update</button>
+                <button onClick={()=>handleUpdate(wrk.id)}>Update</button>
 
                 
             </div>  )}

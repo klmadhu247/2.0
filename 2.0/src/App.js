@@ -2,6 +2,7 @@ import React from "react";
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 import Crud from "./Crud";
+import Axios from "./axios2";
 function App(){
   return(
     <div>
@@ -10,7 +11,8 @@ function App(){
       {/* <Tour/> */}
       {/* <AsynchAwait/>
       <AsyncAwaitFetch/> */}
-      <Crud/>
+      {/* <Crud/> */}
+      <Axios/>
 
     </div>
   )
