@@ -1,5 +1,5 @@
 import React from "react";
-import { DECREMENT, INCREMENT } from "./constants";
+import { DECREMENT, INCREMENT,UPDATENAME } from "./constants";
 
 
 const insState = {
@@ -15,6 +15,9 @@ const redu = (state=insState,action)=>
 
         case  DECREMENT:
         return {...state, count:state.count-1}
+
+        case UPDATENAME:
+            return{...state,Name:action.payload}
         default :
         return state;
     }
